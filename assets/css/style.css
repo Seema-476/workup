@@ -93,3 +93,9 @@
 .footer-bg{
     background: linear-gradient(223.31deg, #FBC524 -34.99%, #E939D9 21.89%, #2ABAE9 74.4%);
 }
+.btn-prev:hover svg path{
+    stroke: white;
+}
+.btn-next:hover svg path {
+    stroke: white;
+}

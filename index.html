@@ -70,6 +70,7 @@
                         'deep-blue': "#4AB6FE",
                         'purple': "#994FFF",
                         'light-purple': "#dcdefe",
+                        'yellow':"#FBC524",
                         'sky-blue': "#2CB9E94D",
                         'light-sky-blue': "#F7FCFE",
                         'light-pink': "#E939D9",
@@ -125,13 +126,13 @@
                     <ul class="flex items-center  menulist gap-8 max-md:gap-5 max-sm:gap-3 max-md:w-full max-md:h-full max-md:min-h-screen max-md:bg-blue max-md:justify-center max-md:items-center max-md:flex-col max-md:fixed max-md:top-0 max-md:-right-[-100%] max-md:ease-linear max-md:duration-700 max-md:z-[11] overflow-hidden"
                         id="navlist">
                         <li><a href="#chat" onclick="opennav()"
-                                class="font-normal sm:text-base text-sm sm:leading-custom-sm text-black relative after:absolute after:contents-[''] after:w-0 after:h-[1px] after:bottom-[-2px] after:right-[10%] after:bg-black after:duration-700 hover:after:w-[80%] after:mx-auto after:text-center before:absolute after:contents-[''] before:w-0 before:h-[1px] before:bottom-0 before:left-0 before:bg-black before:duration-700 hover:before:w-full">Chat
+                                class="font-normal sm:text-base text-sm sm:leading-custom-sm text-black hover:text-blue duration-700">Chat
                                 Room</a></li>
                         <li><a href="#invest" onclick="opennav()"
-                                class="font-normal sm:text-base text-sm sm:leading-custom-sm text-black relative after:absolute after:contents-[''] after:w-0 after:h-[1px] after:bottom-[-2px] after:right-[10%] after:bg-black after:duration-700 hover:after:w-[80%] after:mx-auto after:text-center before:absolute after:contents-[''] before:w-0 before:h-[1px] before:bottom-0 before:left-0 before:bg-black before:duration-700 hover:before:w-full">
+                                class="font-normal sm:text-base text-sm sm:leading-custom-sm text-black hover:text-blue duration-700">
                                 Invest</a></li>
                         <li><a href="#become" onclick="opennav()"
-                                class="font-normal sm:text-base text-sm sm:leading-custom-sm text-black relative after:absolute after:contents-[''] after:w-0 after:h-[1px] after:bottom-[-2px] after:right-[10%] after:bg-black after:duration-700 hover:after:w-[80%] after:mx-auto after:text-center before:absolute after:contents-[''] before:w-0 before:h-[1px] before:bottom-0 before:left-0 before:bg-black before:duration-700 hover:before:w-full">
+                                class="font-normal sm:text-base text-sm sm:leading-custom-sm text-black hover:text-blue duration-700">
                                 Become a Co-Founder</a></li>
                         <li><button
                                 class="font-semibold sm:text-base text-sm sm:leading-suctom-sm text-blue bg-white lg:py-3 lg:px-6 py-[10px] px-5 rounded-[100px] hover:bg-gradient-to-r from-light-blue to-dark-blue hover:text-white duration-700">Log
@@ -181,7 +182,7 @@
     </header>
 
     <!-- Explore Our Features -->
-    <section class="xl:pt-[52px] xl:pb-[68px] md:py-9 py-6 relative">
+    <section class="xl:pt-[52px] xl:pb-[68px] md:py-9 py-6 relative" id="thought">
         <div class="absolute left-0 top-40 -z-10 lg:block hidden"><img src="./assets/images/svg/slider-left-dots.svg"
                 alt="dots" class="pointer-events-none"></div>
         <div class="absolute top-9 right-0 -z-10 xl:block hidden"><img src="./assets/images/svg/slider-right-vector.svg"
@@ -192,69 +193,90 @@
                 Explore <span
                     class="relative after:contents-[''] after:absolute after:lg:w-[155px] after:w-[100px] after:h-1 after:-top-2 after:bg-blue lg:after:-left-11 after:-left-5 after:rounded">Our</span>
                 Features</h2>
-            <div class="slider-list">
-                <div>
-                    <div
-                        class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
-                        <img src="./assets/images/svg/slider-auto-rule.svg" alt="auto" class="pointer-events-none">
-                        <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-cente">Auto Rules</p>
-                        <p
-                            class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[156px] pt-4 text-center">
-                            Create auto rules for all business finance.</p>
+            <div class="relative">
+                <div class="slider-list ">
+                    <div>
+                        <div
+                            class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
+                            <img src="./assets/images/svg/slider-auto-rule.svg" alt="auto" class="pointer-events-none">
+                            <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-cente">Auto Rules
+                            </p>
+                            <p
+                                class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[156px] pt-4 text-center">
+                                Create auto rules for all business finance.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
+                            <img src="./assets/images/svg/slider-linked.svg" alt="auto" class="pointer-events-none">
+                            <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-cente">Linked
+                                Accounts</p>
+                            <p
+                                class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[178px] pt-4 text-center">
+                                Ability to lock & secure any business account.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
+                            <img src="./assets/images/svg/slider-locked.svg" alt="auto" class="pointer-events-none">
+                            <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-cente">Locked
+                                Accounts</p>
+                            <p
+                                class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[213px] pt-4 text-center">
+                                Link any existing business account in seconds.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
+                            <img src="./assets/images/svg/slider-transaction.svg" alt="auto"
+                                class="pointer-events-none">
+                            <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-center">
+                                Transaction
+                                Accounts</p>
+                            <p
+                                class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[193px] pt-4 text-center">
+                                Unlimited payments and transfers within Austraila.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
+                            <img src="./assets/images/svg/slider-auto-rule.svg" alt="auto" class="pointer-events-none">
+                            <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-center">Auto
+                                Rules
+                            </p>
+                            <p
+                                class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[156px] pt-4 text-center">
+                                Create auto rules for all business finance.</p>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <div
-                        class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
-                        <img src="./assets/images/svg/slider-linked.svg" alt="auto" class="pointer-events-none">
-                        <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-cente">Linked
-                            Accounts</p>
-                        <p
-                            class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[178px] pt-4 text-center">
-                            Ability to lock & secure any business account.</p>
+                        class="btn-prev w-[30px] h-[30px] rounded-full border-[1px] flex items-center justify-center absolute -left-9 top-28 hover:bg-gradient-to-l from-purple light-pink to-light-blue hover:border-transparent duration-300">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.90625 1.51147L1.65625 7.76147L7.90625 14.0115" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                </div>
-                <div>
                     <div
-                        class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
-                        <img src="./assets/images/svg/slider-locked.svg" alt="auto" class="pointer-events-none">
-                        <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-cente">Locked
-                            Accounts</p>
-                        <p
-                            class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[213px] pt-4 text-center">
-                            Link any existing business account in seconds.</p>
+                        class="btn-next w-[30px] h-[30px] rounded-full border-[1px] flex items-center justify-center absolute -right-8 top-28 hover:bg-gradient-to-l from-purple light-pink to-light-blue hover:border-transparent duration-300">
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.98047 1.51147L8.23047 7.76147L1.98047 14.0115" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
                 </div>
-                <div>
-                    <div
-                        class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
-                        <img src="./assets/images/svg/slider-transaction.svg" alt="auto" class="pointer-events-none">
-                        <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-center">Transaction
-                            Accounts</p>
-                        <p
-                            class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[193px] pt-4 text-center">
-                            Unlimited payments and transfers within Austraila.</p>
-                    </div>
-                </div>
-                <div>
-                    <div
-                        class="max-w-[267px] h-[249px] w-full bg-white hover:shadow-custom-xl hover:border-transparent duration-700 border border-light-gray rounded-[10px] flex flex-col items-center justify-center p-7">
-                        <img src="./assets/images/svg/slider-auto-rule.svg" alt="auto" class="pointer-events-none">
-                        <p class="font-outfit font-medium text-xl leading-6 text-z-black pt-8 text-center">Auto Rules
-                        </p>
-                        <p
-                            class="font-normal text-base leading-custom-sm text-black opacity-70 max-w-[156px] pt-4 text-center">
-                            Create auto rules for all business finance.</p>
-                    </div>
-                </div>
-                <div></div>
             </div>
         </div>
     </section>
 
     <!-- Our Mission -->
     <section
-        class="max-lg:bg-mission-section bg-cover bg-center bg-no-repeat xl:mt-[68px] md:mb-11 md:mt-9 my-6 relative">
+        class="max-lg:bg-mission-section bg-cover bg-center bg-no-repeat xl:mt-[68px] md:mb-11 md:mt-9 my-6 relative" id="chat">
         <div class="absolute -bottom-44 right-0 -z-10 lg:block hidden"><img
                 src="./assets/images/svg/solution-bottom-vector.svg" alt="vector" class="pointer-events-none"></div>
         <div class="container">
@@ -314,8 +336,8 @@
         </div>
     </section>
 
-    <!-- Join our waitlist -->
-    <section class="md:pt-11 xl:pb-[68px] md:py-9 py-6">
+    <!-- Join our waitlist --> 
+    <section class="md:pt-11 xl:pb-[68px] md:py-9 py-6" id="contact">
         <div class="container">
             <div
                 class="bg-gradient-to-r from-light-blue to-dark-blue rounded-2xl max-w-[761px] mx-auto lg:pb-12 w-full p-7">
@@ -339,7 +361,7 @@
     </section>
 
     <!-- Problem We are solving -->
-    <section class="xl:pt-[68px] xl:pb-[65px] md:py-9 py-8 relative">
+    <section class="xl:pt-[68px] xl:pb-[65px] md:py-9 py-8 relative" id="become">
         <div class="absolute left-0 bottom-40 -z-10 md:block hidden"><img
                 src="./assets/images/svg/solving-left-vector.svg" alt="left" class="pointer-events-none"></div>
         <div class="container">
@@ -421,7 +443,7 @@
     </section>
 
     <!-- Updated with your  Dashboard -->
-    <section class="xl:pt-[65px] xl:pb-[51px] md:py-9 py-8 relative">
+    <section class="xl:pt-[65px] xl:pb-[51px] md:py-9 py-8 relative" id="cofounder">
         <div class="absolute right-0 top-96 -z-10 xl:block hidden"><img
                 src="./assets/images/svg/dashboard-right-vector.svg" alt="svg" class="pointer-events-none"></div>
         <div class="container">
@@ -548,7 +570,7 @@
     </section>
 
     <!-- How it’s working -->
-    <section class="xl:pt-[53px] xl:pb-[71px] py-11 bg-light-sky-blue relative -z-10">
+    <section class="xl:pt-[53px] xl:pb-[71px] py-11 bg-light-sky-blue relative -z-10" id="privacy">
         <div class="absolute left-0 top-0 md:block hidden"><img src="./assets/images/svg/working-left-vector.svg"
                 alt="vector" class="pointer-events-none"></div>
         <div class="container">
@@ -624,7 +646,7 @@
     </section>
 
     <!-- Potential Plans -->
-    <section class="xl:pt-[116px] lg:pt-20 pt-16 xl:pb-[87px] md:pb-9 py-8 relative">
+    <section class="xl:pt-[116px] lg:pt-20 pt-16 xl:pb-[87px] md:pb-9 py-8 relative" id="invest">
         <div class="absolute right-0 xl:top-28 lg:top-20 top-5 -z-10 lg:block hidden"><img
                 src="./assets/images/svg/potential-right-vector.svg" alt="svg" class="pointer-events-none"></div>
         <div class="absolute left-0 top-80 -z-10 md:block hidden"><img src="./assets/images/svg/potential-left-dots.svg"
@@ -1033,13 +1055,13 @@
                                     Home
                                 </li>
                                 <li class="pt-[10px]"><a href="#thought"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white text-nowrap">What
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white text-nowrap hover:text-blue duration-500">What
                                         are
                                         your thoughts?</a></li>
                                 <li class="pt-2"><a href="#invest"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white">Invest</a></li>
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white hover:text-blue duration-500">Invest</a></li>
                                 <li class="pt-2"><a href="#cofounder"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white whitespace-nowrap">Become
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white whitespace-nowrap hover:text-blue duration-500">Become
                                         a
                                         cofounder</a></li>
                             </ul>
@@ -1050,14 +1072,14 @@
                                     Links
                                 </li>
                                 <li class="pt-[10px]"><a href="#contact"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white text-nowrap">Contact
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white text-nowrap hover:text-blue duration-500">Contact
                                         us</a></li>
                                 <li class="pt-2"><a href="#faq"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white">FAQ</a></li>
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white hover:text-blue duration-500">FAQ</a></li>
                                 <li class="pt-2"><a href="#privacy"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white">Privacy</a></li>
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white hover:text-blue duration-500">Privacy</a></li>
                                 <li class="pt-2"><a href="#terms"
-                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white">Terms &
+                                        class="font-medium text-xs sm:text-sm sm:leading-4 text-white hover:text-blue duration-500">Terms &
                                         conditions</a></li>
                             </ul>
                         </div>
@@ -1077,7 +1099,7 @@
                     class="w-[20px] h-[20px] pointer-events-none">
             </div>
         </div>
-    </footer>   
+    </footer>
 
 
     <!-- slick link  -->
