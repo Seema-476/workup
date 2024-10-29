@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* cross-icon */
+.cross span:nth-child(1) {
+    transform: rotate(45deg) translateY(9px);
+    transition: all 300ms linear !important;
+}
+
+.cross span:nth-child(2) {
+    opacity: 0;
+    transform: translate(-100%);
+    transition: all 300ms linear !important;
+}
+
+.cross span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+    transition: all 300ms linear;
+}
+
+@media(min-width:640px) {
+    .cross span:nth-child(1) {
+        transform: rotate(45deg) translateY(14px);
+    }
+
+    .cross span:nth-child(2) {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-14px);
+    }
+}
+
+.topbtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.text-gradient {
+    background: linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media(min-width:1440px) {
+    .hero-left-img {
+        max-width: 628px !important;
+    }
+
+    .hero-right-img {
+        max-width: 638px !important;
+    }
+}
+
+/* slider */
+.slick-slide {
+    max-width: 267px;
+}
+
+.slick-track {
+    gap: 24px;
+    display: flex;
+}
+
+/* accordion */
+.accordian1.active .para {
+    height: unset !important;
+    padding-top: 18px;
+}
+
+.accordian1.active .rotate {
+    background-image: url("../images/svg/accordion-minus.svg");
+    background-repeat: no-repeat;
+}
+
+.accordian1.active .accordianbtn .group {
+    color: #2ABAE9;
+    opacity: 1;
+}
+.accordian1.active .accordianbtn::after {
+    background-image: url("../images/svg/accordion-minus.svg");
+        background-repeat: no-repeat;
+        height: 4px;
+        width: 16px;
+}
+/* solving-rectangle-bg-color */
+.solving-rectangle-bg-color{
+    background: linear-gradient(191.79deg, #E939D9 -0.53%, #2ABAE9 92.1%),
+    linear-gradient(90.79deg, #994FFF 32.27%, #4AB6FE 78.57%);           
+}
+.footer-bg{
+    background: linear-gradient(223.31deg, #FBC524 -34.99%, #E939D9 21.89%, #2ABAE9 74.4%);
+}
