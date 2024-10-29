@@ -33,7 +33,7 @@
     }
 }
 
-.topbtn.show {
+.topBtn.show {
     opacity: 1;
     visibility: visible;
 }
