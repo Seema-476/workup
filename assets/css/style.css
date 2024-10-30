@@ -31,9 +31,26 @@
     .cross span:nth-child(3) {
         transform: rotate(-45deg) translateY(-14px);
     }
+
+    .accordian1.active .accordianbtn::after {
+        background-image: url("../images/svg/accordion-minus.svg");
+        background-repeat: no-repeat;
+        width: 16px !important;
+        height: 4px !important;
+    }
 }
 
-.topBtn.show {
+@media(min-width:1024px) {
+    .slick-slide {
+        max-width: 267px !important;
+    }
+}
+
+.hidden-overflow {
+    overflow: hidden !important;
+}
+
+.topbtn.show {
     opacity: 1;
     visibility: visible;
 }
@@ -55,13 +72,13 @@
 }
 
 /* slider */
-.slick-slide {
-    max-width: 267px;
-}
-
+  .slick-slide {
+      max-width: 245px;
+  }
 .slick-track {
     gap: 24px;
     display: flex;
+    margin-bottom: 5px;
 }
 
 /* accordion */
@@ -70,32 +87,32 @@
     padding-top: 18px;
 }
 
-.accordian1.active .rotate {
-    background-image: url("../images/svg/accordion-minus.svg");
-    background-repeat: no-repeat;
-}
-
 .accordian1.active .accordianbtn .group {
     color: #2ABAE9;
     opacity: 1;
 }
+
 .accordian1.active .accordianbtn::after {
     background-image: url("../images/svg/accordion-minus.svg");
-        background-repeat: no-repeat;
-        height: 4px;
-        width: 16px;
+    background-repeat: no-repeat;
+    height: 3px !important;
+    width: 12px !important;
 }
+
 /* solving-rectangle-bg-color */
-.solving-rectangle-bg-color{
+.solving-rectangle-bg-color {
     background: linear-gradient(191.79deg, #E939D9 -0.53%, #2ABAE9 92.1%),
-    linear-gradient(90.79deg, #994FFF 32.27%, #4AB6FE 78.57%);           
+        linear-gradient(90.79deg, #994FFF 32.27%, #4AB6FE 78.57%);
 }
-.footer-bg{
+
+.footer-bg {
     background: linear-gradient(223.31deg, #FBC524 -34.99%, #E939D9 21.89%, #2ABAE9 74.4%);
 }
-.btn-prev:hover svg path{
+
+.btn-prev:hover svg path {
     stroke: white;
 }
+
 .btn-next:hover svg path {
     stroke: white;
 }
